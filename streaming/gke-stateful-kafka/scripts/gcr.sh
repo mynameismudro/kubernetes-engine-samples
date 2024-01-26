@@ -21,7 +21,7 @@
 # bash scripts/gcr.sh prometheus-operator/prometheus-operator v0.58.0 quay.io
 
 pull_push () {
-  REGISTRY=us-docker.pkg.dev
+  REGISTRY=asia-docker.pkg.dev
   REPO_NAME=main
   REPO_FORMAT=docker
   
