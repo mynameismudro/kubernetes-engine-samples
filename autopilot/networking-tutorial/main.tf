@@ -23,7 +23,7 @@ provider "google" {}
 variable "region" {
   type        = string
   description = "Region where the cluster will be created."
-  default     = "us-central1"
+  default     = "asia-east2"
 }
  
 variable "cluster_name" {
