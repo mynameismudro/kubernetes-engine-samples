@@ -22,37 +22,37 @@ module "gcp-network" {
 
   subnets = [
     {
-      subnet_name           = "snet-gke-kafka-us-central1"
+      subnet_name           = "snet-gke-kafka-asia-east2"
       subnet_ip             = "10.0.0.0/17"
-      subnet_region         = "us-central1"
+      subnet_region         = "asia-east2"
       subnet_private_access = true
     },
     {
-      subnet_name           = "snet-gke-kafka-us-west1"
+      subnet_name           = "snet-gke-kafka-asia-south1"
       subnet_ip             = "10.0.128.0/17"
-      subnet_region         = "us-west1"
+      subnet_region         = "asia-south1"
       subnet_private_access = true
     },
   ]
 
   secondary_ranges = {
-    ("snet-gke-kafka-us-central1") = [
+    ("snet-gke-kafka-asia-east2") = [
       {
-        range_name    = "ip-range-pods-us-central1"
+        range_name    = "ip-range-pods-asia-east2"
         ip_cidr_range = "192.168.0.0/18"
       },
       {
-        range_name    = "ip-range-svc-us-central1"
+        range_name    = "ip-range-svc-asia-east2"
         ip_cidr_range = "192.168.64.0/18"
       },
     ],
-    ("snet-gke-kafka-us-west1") = [
+    ("snet-gke-kafka-asia-south1") = [
       {
-        range_name    = "ip-range-pods-us-west1"
+        range_name    = "ip-range-pods-asia-south1"
         ip_cidr_range = "192.168.128.0/18"
       },
       {
-        range_name    = "ip-range-svc-us-west1"
+        range_name    = "ip-range-svc-asia-south1"
         ip_cidr_range = "192.168.192.0/18"
       },
     ]

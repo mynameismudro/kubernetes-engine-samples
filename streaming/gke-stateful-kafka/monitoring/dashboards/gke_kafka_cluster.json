@@ -25,7 +25,7 @@
                       "crossSeriesReducer": "REDUCE_NONE",
                       "perSeriesAligner": "ALIGN_MEAN"
                     },
-                    "filter": "metric.type=\"kubernetes.io/node/cpu/allocatable_utilization\" resource.type=\"k8s_node\" resource.label.\"cluster_name\"=\"gke-kafka-us-central1\""
+                    "filter": "metric.type=\"kubernetes.io/node/cpu/allocatable_utilization\" resource.type=\"k8s_node\" resource.label.\"cluster_name\"=\"gke-kafka-asia-east2\""
                   }
                 }
               }
@@ -62,7 +62,7 @@
                       "crossSeriesReducer": "REDUCE_NONE",
                       "perSeriesAligner": "ALIGN_MEAN"
                     },
-                    "filter": "metric.type=\"kubernetes.io/node/memory/allocatable_utilization\" resource.type=\"k8s_node\" resource.label.\"cluster_name\"=\"gke-kafka-us-central1\""
+                    "filter": "metric.type=\"kubernetes.io/node/memory/allocatable_utilization\" resource.type=\"k8s_node\" resource.label.\"cluster_name\"=\"gke-kafka-asia-east2\""
                   }
                 }
               }
@@ -81,7 +81,7 @@
       {
         "height": 3,
         "widget": {
-          "title": "Kubernetes Container - CPU usage time for gke-kafka-us-central1, kafka [MEAN]",
+          "title": "Kubernetes Container - CPU usage time for gke-kafka-asia-east2, kafka [MEAN]",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -99,7 +99,7 @@
                       "crossSeriesReducer": "REDUCE_NONE",
                       "perSeriesAligner": "ALIGN_RATE"
                     },
-                    "filter": "metric.type=\"kubernetes.io/container/cpu/core_usage_time\" resource.type=\"k8s_container\" resource.label.\"cluster_name\"=\"gke-kafka-us-central1\" metadata.user_labels.\"app.kubernetes.io/component\"=\"kafka\"",
+                    "filter": "metric.type=\"kubernetes.io/container/cpu/core_usage_time\" resource.type=\"k8s_container\" resource.label.\"cluster_name\"=\"gke-kafka-asia-east2\" metadata.user_labels.\"app.kubernetes.io/component\"=\"kafka\"",
                     "secondaryAggregation": {
                       "alignmentPeriod": "60s",
                       "crossSeriesReducer": "REDUCE_NONE",
@@ -123,7 +123,7 @@
       {
         "height": 3,
         "widget": {
-          "title": "Kubernetes Container - Memory usage for gke-kafka-us-central1, kafka [MEAN]",
+          "title": "Kubernetes Container - Memory usage for gke-kafka-asia-east2, kafka [MEAN]",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -141,7 +141,7 @@
                       "crossSeriesReducer": "REDUCE_NONE",
                       "perSeriesAligner": "ALIGN_MEAN"
                     },
-                    "filter": "metric.type=\"kubernetes.io/container/memory/used_bytes\" resource.type=\"k8s_container\" resource.label.\"cluster_name\"=\"gke-kafka-us-central1\" metadata.user_labels.\"app.kubernetes.io/component\"=\"kafka\""
+                    "filter": "metric.type=\"kubernetes.io/container/memory/used_bytes\" resource.type=\"k8s_container\" resource.label.\"cluster_name\"=\"gke-kafka-asia-east2\" metadata.user_labels.\"app.kubernetes.io/component\"=\"kafka\""
                   }
                 }
               }
@@ -160,7 +160,7 @@
       {
         "height": 3,
         "widget": {
-          "title": "Disk bytes transferred for gke-kafka-us-central1, sdb [MEAN]",
+          "title": "Disk bytes transferred for gke-kafka-asia-east2, sdb [MEAN]",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -202,7 +202,7 @@
       {
         "height": 3,
         "widget": {
-          "title": "VM Instance - Disk usage for gke-kafka-us-central1, sdb, used [MEAN]",
+          "title": "VM Instance - Disk usage for gke-kafka-asia-east2, sdb, used [MEAN]",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
@@ -257,7 +257,7 @@
                       "crossSeriesReducer": "REDUCE_NONE",
                       "perSeriesAligner": "ALIGN_MEAN"
                     },
-                    "filter": "metric.type=\"kubernetes.io/pod/volume/utilization\" resource.type=\"k8s_pod\" resource.label.\"cluster_name\"=\"gke-kafka-us-central1\" metadata.user_labels.\"app.kubernetes.io/component\"=\"kafka\" metric.label.\"volume_name\"=\"data\""
+                    "filter": "metric.type=\"kubernetes.io/pod/volume/utilization\" resource.type=\"k8s_pod\" resource.label.\"cluster_name\"=\"gke-kafka-asia-east2\" metadata.user_labels.\"app.kubernetes.io/component\"=\"kafka\" metric.label.\"volume_name\"=\"data\""
                   }
                 }
               }
@@ -276,7 +276,7 @@
       {
         "height": 3,
         "widget": {
-          "title": "VM Instance - Uptime for gke-kafka-us-central1 [MEAN]",
+          "title": "VM Instance - Uptime for gke-kafka-asia-east2 [MEAN]",
           "xyChart": {
             "chartOptions": {
               "mode": "COLOR"
