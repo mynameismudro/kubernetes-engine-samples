@@ -28,7 +28,7 @@ resource "google_artifact_registry_repository_iam_binding" "binding" {
   repository = google_artifact_registry_repository.main.name
   role       = "roles/artifactregistry.reader"
   members = [
-    "serviceAccount:${module.gke_kafka_central.service_account}",
+    "serviceAccount:${module.gke_kafka_east2.service_account}",
   ]
 }
 // [END artifactregistry_create_docker_repo]
@@ -80,7 +80,7 @@ module "gke_kafka_south1" {
   enable_private_nodes            = true
   master_ipv4_cidr_block          = "172.16.0.16/28"
   create_service_account          = false
-  service_account                 = module.gke_kafka_central.service_account
+  service_account                 = module.gke_kafka_east2.service_account
   grant_registry_access           = true
 }
 # [END gke_autopilot_private_regional_backup_cluster]
