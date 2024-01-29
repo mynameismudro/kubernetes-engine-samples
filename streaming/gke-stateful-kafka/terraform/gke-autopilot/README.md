@@ -1,4 +1,4 @@
-# Terraform to provision GKE Autopilot hello
+# Terraform to provision GKE Autopilot
 
 ## Feature List
 * Use [Autopilot Compute Class](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-compute-classes) `Scale-Out` to automatically setup taints and tolerations to a dedicated node pool, which will be used by the helm chart to distribute the DB Pods
